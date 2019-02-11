@@ -75,6 +75,11 @@ li {
 .link {
   text-decoration: none;
   color: #04CA83;
-  font-weight: 800
+  font-weight: 800;
+  transition: 0.2s
+}
+.link:hover {
+  color: white;
+  cursor: pointer;
 }
 </style>

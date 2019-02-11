@@ -54,7 +54,11 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+li > a:hover {
+  color: #04CA83;
+}
 li > a {
+  transition: 0.2s;
   color: white;
   text-decoration: none;
   font-size: 1.4em;
@@ -72,6 +76,11 @@ li {
 .link {
   text-decoration: none;
   color: #04CA83;
-  font-weight: 800
+  font-weight: 800;
+  transition: 0.2s
+}
+.link:hover {
+  color: white;
+  cursor: pointer;
 }
 </style>
