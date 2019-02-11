@@ -2,11 +2,11 @@
   <div class="hello">
     <div class="container">
       <h3>
-        Hey, you can find me on <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> or check out my <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
+        You can find me on <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> or check out my <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
       </h3>
       <br>
-      <h3>
-        Want to talk? Send me an email to  <a hre="mailto:felipercmelo@gmail.com" class="link">felipercmelo@gmail.com</a>
+      <h3 style="text-align: center">
+        Want to talk? Send me an email at  <a style="" hre="mailto:felipercmelo@gmail.com" class="link email">felipercmelo@gmail.com</a>
       </h3>
       <br>
     </div>
@@ -43,6 +43,10 @@ export default {
   text-align: left;
   padding: 20px
 }
+.email {
+  font-size: 2.7rem !important;
+
+}
 h3 {
   margin: 30px 0 0;
   color: white;
@@ -73,11 +77,14 @@ li {
   h3 {
     font-size: 2rem !important;
   }
+  .email {
+    font-size: 1.7rem !important;
+  }
 }
 .link {
   text-decoration: none;
   color: #04CA83;
-  font-weight: 800;
+  font-weight: 700;
   transition: 0.2s
 }
 .link:hover {

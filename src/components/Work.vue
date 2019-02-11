@@ -2,7 +2,8 @@
   <div class="hello" ref="main">
     <div class="container">
       <h3 class="title">Phone to Chrome</h3>
-      <h3>React Native app reads a QR code on website or extension and a chat between them is created.</h3>
+      <h3>Share texts and links between your phone and your pc</h3>
+      <h3>React Native app reads a QR code on <a class="link" href="https://ctop.site/">ctop.site</a> or the <a href="https://chrome.google.com/webstore/detail/chrome-to-phone/hobhnejpjknnhojomhmppgdalddofend" class="link">extension</a>   and a chat is created</h3>
       <div class="row">
         <div class="column">
           <a href="https://github.com/ribas14/phone-to-chrome" target="blank">
