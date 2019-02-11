@@ -38,6 +38,7 @@ export default {
   color: white;
   font-size: 1.4em;
   float: left;
+  cursor: pointer;
   
 }
 .hello {
