@@ -26,19 +26,20 @@
           </iframe>
         </div>
       </div>
-      <h3 class="title">Dashboard for a legacy system using Vuejs</h3>
+      <h3 class="title">Santri Sistemas</h3>
+      <h3>Dashboard for a legacy system using Vuejs</h3>
       <div class="video">
         <div style="width:100%;height:0px;position:relative;padding-bottom:51.095%;">
           <iframe src="https://streamable.com/s/gkre8/lwekca" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         </div>
       </div>
-      <h3 class="title">React Native app with authentication and backend in Java</h3>
+      <h3 class="title">Santri Sistemas</h3>
+      <h3>React Native app with authentication and backend in Java</h3>
       <div class="video">
         <div style="width:100%;height:0px;position:relative;padding-bottom:177.345%;">
           <iframe src="https://streamable.com/s/ukymp/kjoard" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         </div>
       </div>
-      <br>
       <br>
       <h3>Let's
         <a @click.stop="goTo('talk')" class="link">talk</a>

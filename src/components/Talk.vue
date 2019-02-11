@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="container">
       <h3>
-        Hey, you can find me on <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> or checkout my <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
+        Hey, you can find me on <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> or check out my <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
       </h3>
       <br>
       <h3>
@@ -47,6 +47,7 @@ h3 {
   margin: 30px 0 0;
   color: white;
   font-size: 3rem;
+  padding: 10px;
   font-weight: 200
 }
 ul {
