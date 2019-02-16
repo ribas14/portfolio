@@ -1,18 +1,26 @@
 <template>
   <div class="hello">
     <div class="container">
-      <h3>
-        Hi, I am a web developer working with react native and vuejs
+      <h3 v-if="lang == 'eng'">
+        Hi, I am a web developer working with javascript, react native and vuejs
       </h3>
+      <h3 v-if="lang == 'pt'">
+        Oi, trabalho com desenvolvimento web usando javascript, react native e vuejs
+      </h3>      
       <br>
-      <h3>
+      <h3 v-if="lang == 'eng'">
         You can check out some of my <a @click.stop="goTo('/work')" class="link">work</a>
       </h3>
+      <h3 v-if="lang == 'pt'">
+        Você pode ver alguns dos meus <a @click.stop="goTo('/work')" class="link">trabalhos</a>
+      </h3>      
       <br>
-      <h3>
+      <h3 v-if="lang == 'eng'">
         Or we can <a @click.stop="goTo('/talk')" class="link">talk</a>
       </h3>
-
+      <h3 v-if="lang == 'pt'">
+        Ou podemos <a @click.stop="goTo('/talk')" class="link">conversar</a>
+      </h3>
     </div>
   </div>
 </template>
@@ -20,8 +28,12 @@
 <script>
 export default {
   name: 'Home',
+  data() {
+    return {
+    };
+  },  
   props: {
-    msg: String
+    lang: String,
   },
   methods: {
     goTo(r) {
@@ -49,7 +61,7 @@ export default {
 h3 {
   margin: 30px 0 0;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 200
 }
 ul {

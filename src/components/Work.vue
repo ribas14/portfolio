@@ -2,8 +2,10 @@
   <div class="hello" ref="main">
     <div class="container">
       <h3 class="title">Phone to Chrome</h3>
-      <h3>Share texts and links between your phone and your pc</h3>
-      <h3>React Native app reads a QR code on <a class="link" href="https://ctop.site/">ctop.site</a> or the <a href="https://chrome.google.com/webstore/detail/chrome-to-phone/hobhnejpjknnhojomhmppgdalddofend" class="link">extension</a>   and a chat is created</h3>
+      <h3 v-if="lang == 'eng'">Share texts and links between your phone and your pc</h3>
+      <h3 v-if="lang == 'pt'">Compartilhe texto e links entre seu celular e seu pc</h3>
+      <h3 v-if="lang == 'eng'">React Native app reads a QR code on <a class="link" href="https://ctop.site/">ctop.site</a> or the <a href="https://chrome.google.com/webstore/detail/chrome-to-phone/hobhnejpjknnhojomhmppgdalddofend" class="link">extension</a>   and a chat is created</h3>
+      <h3 v-if="lang == 'pt'">React Native app lê código QR em <a class="link" href="https://ctop.site/">ctop.site</a> ou na <a href="https://chrome.google.com/webstore/detail/chrome-to-phone/hobhnejpjknnhojomhmppgdalddofend" class="link">extensão</a>  e um chat é criado</h3>
       <div class="row">
         <div class="column">
           <a href="https://github.com/ribas14/phone-to-chrome" target="blank">
@@ -28,23 +30,28 @@
         </div>
       </div>
       <h3 class="title">Santri Sistemas</h3>
-      <h3>Dashboard for a legacy system using Vuejs</h3>
+      <h3 v-if="lang == 'eng'">Dashboard for a legacy system using Vuejs</h3>
+      <h3 v-if="lang == 'pt'">Dashboard para um sistema legacy usando o framework Vuejs</h3>
       <div class="video">
         <div style="width:100%;height:0px;position:relative;padding-bottom:51.095%;">
           <iframe src="https://streamable.com/s/gkre8/lwekca" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         </div>
       </div>
       <h3 class="title">Santri Sistemas</h3>
-      <h3>React Native app with authentication and backend in Java</h3>
+      <h3 v-if="lang == 'eng'">React Native app with authentication and backend in Java</h3>
+      <h3 v-if="lang == 'pt'">React Native app com autenticação e backend feito em Java</h3>
       <div class="video">
         <div style="width:100%;height:0px;position:relative;padding-bottom:177.345%;">
           <iframe src="https://streamable.com/s/ukymp/kjoard" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         </div>
       </div>
       <br>
-      <h3>Let's
+      <h3 v-if="lang == 'eng'">Let's
         <a @click.stop="goTo('talk')" class="link">talk</a>
       </h3>
+      <h3 v-if="lang == 'pt'">Vamos 
+        <a @click.stop="goTo('talk')" class="link">conversar</a>
+      </h3>      
     </div>
   </div>
 </template>
@@ -57,14 +64,11 @@ export default {
       heigth: 480,
     };
   },
-  watch: {
-
-  },
   mounted() {
     this.heigth = window.innerHeight
   },
   props: {
-    msg: String
+    lang: String
   },
   methods: {
     goTo(r) {

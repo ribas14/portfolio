@@ -1,13 +1,19 @@
 <template>
   <div class="hello">
     <div class="container">
-      <h3>
+      <h3 v-if="lang == 'eng'">
         You can find me on <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> or check out my <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
       </h3>
+      <h3 v-if="lang == 'pt'">
+        Você pode me achar no <a href="https://www.linkedin.com/in/frcm/" target="blank" class="link">Linkedin</a> ou dar uma olhada no meu <a class="link" href="https://github.com/ribas14" target="blank">Github</a>
+      </h3>      
       <br>
-      <h3 style="text-align: center">
+      <h3  v-if="lang == 'eng'" style="text-align: center">
         Want to talk? Send me an email at  <a style="" hre="mailto:felipercmelo@gmail.com" class="link email">felipercmelo@gmail.com</a>
       </h3>
+      <h3  v-if="lang == 'pt'" style="text-align: center">
+        Quer conversar? Envie um email para  <a style="" hre="mailto:felipercmelo@gmail.com" class="link email">felipercmelo@gmail.com</a>
+      </h3>      
       <br>
     </div>
   </div>
@@ -17,8 +23,12 @@
 
 export default {
   name: 'Talk',
+  data() {
+    return {
+    };
+  },  
   props: {
-    msg: String
+    lang: String,
   },
   methods: {
     goTo(r) {
