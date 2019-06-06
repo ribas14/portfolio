@@ -1,25 +1,29 @@
 <template>
   <div class="hello">
     <div class="container">
-      <h3 v-if="lang == 'eng'">
-        Hi, I am a web developer working with javascript, react native and vuejs
-      </h3>
-      <h3 v-if="lang == 'pt'">
-        Oi, trabalho com desenvolvimento web usando javascript, react native e vuejs
-      </h3>      
+      <h3
+        v-if="lang == 'eng'"
+      >Hi, I am a web developer working with javascript, react, react native and vuejs</h3>
+      <h3
+        v-if="lang == 'pt'"
+      >Oi, trabalho com desenvolvimento web usando javascript, react, react native e vuejs</h3>
       <br>
       <h3 v-if="lang == 'eng'">
-        You can check out some of my <a @click.stop="goTo('/work')" class="link">work</a>
+        You can check out some of my
+        <a @click.stop="goTo('/work')" class="link">work</a>
       </h3>
       <h3 v-if="lang == 'pt'">
-        Você pode ver alguns dos meus <a @click.stop="goTo('/work')" class="link">trabalhos</a>
-      </h3>      
+        Você pode ver alguns dos meus
+        <a @click.stop="goTo('/work')" class="link">trabalhos</a>
+      </h3>
       <br>
       <h3 v-if="lang == 'eng'">
-        Or we can <a @click.stop="goTo('/talk')" class="link">talk</a>
+        Or we can
+        <a @click.stop="goTo('/talk')" class="link">talk</a>
       </h3>
       <h3 v-if="lang == 'pt'">
-        Ou podemos <a @click.stop="goTo('/talk')" class="link">conversar</a>
+        Ou podemos
+        <a @click.stop="goTo('/talk')" class="link">conversar</a>
       </h3>
     </div>
   </div>
@@ -27,20 +31,19 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
-    return {
-    };
-  },  
+    return {};
+  },
   props: {
-    lang: String,
+    lang: String
   },
   methods: {
     goTo(r) {
-      this.$router.push(r)
+      this.$router.push(r);
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -52,17 +55,16 @@ export default {
   color: white;
   font-size: 1.4em;
   float: left;
-  
 }
 .hello {
   text-align: left;
-  padding: 20px
+  padding: 20px;
 }
 h3 {
   margin: 30px 0 0;
   color: white;
   font-size: 3rem;
-  font-weight: 200
+  font-weight: 200;
 }
 ul {
   text-align: right;
@@ -73,7 +75,7 @@ li > a {
   color: white;
   text-decoration: none;
   font-size: 1.4em;
-  font-weight: 600
+  font-weight: 600;
 }
 li {
   display: inline-block;
@@ -86,9 +88,9 @@ li {
 }
 .link {
   text-decoration: none;
-  color: #04CA83;
+  color: #04ca83;
   font-weight: 800;
-  transition: 0.2s
+  transition: 0.2s;
 }
 .link:hover {
   color: white;
