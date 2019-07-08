@@ -35,8 +35,7 @@
           </a>
         </div>
         <div class="column">
-          <!-- <a href="https://clube.opopular.com.br" target="blank"> -->
-          <a href="https://clube-assinante-frontend-qa.apps-gjc.com.br" target="blank">
+          <a href="https://clube.opopular.com.br" target="blank">
             <img src="@/assets/clube_opopular.png" alt="Snow" style="width:50px; float: left">
           </a>
         </div>
