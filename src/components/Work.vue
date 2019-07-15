@@ -124,21 +124,6 @@
           ></iframe>
         </div>
       </div>
-      <h3 class="title">Santri Sistemas</h3>
-      <h3 v-if="lang == 'eng'">React Native app with authentication and backend in Java</h3>
-      <h3 v-if="lang == 'pt'">React Native app com autenticação e backend feito em Java</h3>
-      <div class="video">
-        <div style="width:100%;height:0px;position:relative;padding-bottom:177.345%;">
-          <iframe
-            src="https://streamable.com/s/ukymp/kjoard"
-            frameborder="0"
-            width="100%"
-            height="100%"
-            allowfullscreen
-            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"
-          ></iframe>
-        </div>
-      </div>
       <br>
       <h3 v-if="lang == 'eng'">
         Let's
